@@ -64,14 +64,13 @@
   }
   .logo{ display:flex; align-items:center; gap: 8px; }
   .logo-mark{
-    width: 32px; height: 32px;
-    background: var(--gold);
-    border-radius: 6px;
+    width: 34px; height: 34px;
+    border-radius: 8px;
+    overflow: hidden;
     display:flex; align-items:center; justify-content:center;
-    color: var(--ink-black);
-    font-weight: 800;
-    font-family: 'Sora', sans-serif;
+    flex-shrink: 0;
   }
+  .logo-mark img{ width: 100%; height: 100%; object-fit: cover; }
   .logo-text{ font-family:'Sora',sans-serif; font-weight: 700; font-size: 1.1rem; }
   .logo-text span{ color: var(--gold); }
   .logo-sub{ font-size: 0.62rem; color: rgba(255,255,255,0.55); margin-left: 4px; }
@@ -365,6 +364,7 @@
     </div>
     <div class="util-right">
       <span>📞 073 533 6632</span>
+      <a href="https://www.tiktok.com/@mr_tshepo" target="_blank">🎵 @mr_tshepo</a>
     </div>
   </div>
 </div>
@@ -372,7 +372,7 @@
 <div class="main-nav">
   <div class="wrap">
     <div class="logo">
-      <div class="logo-mark">T</div>
+      <div class="logo-mark"><img src="data:image/png;base64,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" alt="T-Electros logo"></div>
       <div class="logo-text">T-<span>Electros</span><span class="logo-sub">Since 2020</span></div>
     </div>
     <div class="nav-links">
@@ -445,7 +445,7 @@
         <div style="font-size:2.4rem;">📋</div>
         <div>
           <div class="hc-title">Online Services</div>
-          <div class="hc-desc">CV Writing, Cover Letters, Posters, Document Editing.</div>
+          <div class="hc-desc">CV Writing, Cover Letters, Posters, Websites, Company Registration.</div>
           <a href="#services" class="btn btn-gold">Explore Services</a>
         </div>
       </div>
@@ -466,7 +466,7 @@
             <div class="icon">📄</div>
             <div class="s-title">CV / Resume Writing</div>
             <div class="s-desc">Professional CVs that get you hired</div>
-            <div class="s-price">R50+</div>
+            <div class="s-price">R60+</div>
           </div>
           <div class="service-tile">
             <div class="icon">✉️</div>
@@ -478,19 +478,43 @@
             <div class="icon">🎨</div>
             <div class="s-title">Poster Design</div>
             <div class="s-desc">Flyers &amp; event posters</div>
-            <div class="s-price">R50</div>
+            <div class="s-price">R100+</div>
           </div>
           <div class="service-tile">
             <div class="icon">📑</div>
             <div class="s-title">CV + Letter Bundle</div>
             <div class="s-desc">Matching application package</div>
-            <div class="s-price">R80</div>
+            <div class="s-price">R90</div>
           </div>
           <div class="service-tile">
             <div class="icon">🛠️</div>
             <div class="s-title">Document Editing</div>
             <div class="s-desc">Formatting &amp; clean-up</div>
-            <div class="s-price">R30+</div>
+            <div class="s-price">R50+</div>
+          </div>
+          <div class="service-tile">
+            <div class="icon">🏢</div>
+            <div class="s-title">Company Registration</div>
+            <div class="s-desc">We register your company for you</div>
+            <div class="s-price">R350</div>
+          </div>
+          <div class="service-tile">
+            <div class="icon">💻</div>
+            <div class="s-title">HTML Website Design</div>
+            <div class="s-desc">A working website built for your business</div>
+            <div class="s-price">R150</div>
+          </div>
+          <div class="service-tile">
+            <div class="icon">📈</div>
+            <div class="s-title">Business Plans</div>
+            <div class="s-desc">For small businesses</div>
+            <div class="s-price">R200+</div>
+          </div>
+          <div class="service-tile">
+            <div class="icon">📋</div>
+            <div class="s-title">Business Proposals</div>
+            <div class="s-desc">For small businesses</div>
+            <div class="s-price">R150</div>
           </div>
           <div class="service-tile">
             <div class="icon">⚙️</div>
@@ -672,6 +696,7 @@
       <div class="contact-numbers">
         <a href="https://wa.me/27735336632">💬 073 533 6632 — CVs, Letters &amp; Posters</a>
         <a href="https://wa.me/27617185793">💬 061 718 5793 — Electronics</a>
+        <a href="https://www.tiktok.com/@mr_tshepo" target="_blank">🎵 @mr_tshepo — Follow us on TikTok</a>
       </div>
     </div>
   </div>
